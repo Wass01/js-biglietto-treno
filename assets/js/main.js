@@ -25,3 +25,6 @@ if(eta < 18){
 
 console.log("Il prezzo del biglietto è: " + prezzoBiglietto + "€");
 console.log("Hai effettuato la prenotazione il: " + giorno + "/" + mese + "/" + anno);
+
+document.getElementById("biglietto").innerHTML += prezzoBiglietto + "€";
+document.getElementById("data").innerHTML += giorno + "/" + mese + "/" + anno;
