@@ -1,10 +1,18 @@
 // creazione variabili necessarie
-var eta = prompt("Inserisci la tua età:");
-var chilometri = prompt("Inserisci i chilometri che vuoi fare:");
+var eta = parseInt (prompt("Inserisci la tua età:"));
+var chilometri =parseFloat (prompt("Inserisci i chilometri che vuoi fare:"));
 var prezzoBiglietto;
 
-console.log(parseInt(eta));
-console.log(parseFloat(chilometri));
+// creazione variabili per la data
+var date = new Date();
+var giorno = date.getDate();
+var mese = date.getMonth() + 1;
+var anno = date.getFullYear();
+
+
+console.log(eta);
+console.log(chilometri);
+console.log(giorno);
 
 // condizione per il calcolo
 if(eta < 18){
@@ -16,3 +24,4 @@ if(eta < 18){
 }
 
 console.log("Il prezzo del biglietto è: " + prezzoBiglietto + "€");
+console.log("Hai effettuato la prenotazione il: " + giorno + "/" + mese + "/" + anno);
